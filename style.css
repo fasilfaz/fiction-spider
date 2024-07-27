@@ -120,7 +120,7 @@ header {
 .hero-image img {
     height: 600px;
     z-index: 1;
-    margin-top: 80px;
+    margin-top: 170px;
 }
 
 .hero-section::before {
@@ -271,16 +271,7 @@ header {
     color: #ccc;
 }
 
-@media (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .project-card {
-        max-width: 80%;
-    }
-}
 
 .testimonials-section {
     padding: 50px;
@@ -326,6 +317,176 @@ header {
     font-size: 1.2em;
     color: #e62429; /* Spider-Man red */
 }
+.news-section {
+    padding: 50px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 2.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-card img {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.news-card h3 {
+    font-size: 1.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 10px;
+}
+
+.news-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.news-cta {
+    text-decoration: none;
+    background-color: #e62429; /* Spider-Man red */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.news-cta:hover {
+    background-color: #ff4d4d;
+}
+.contact-section {
+    padding: 50px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #121212;
+    color: #fff;
+}
+
+.contact-cta {
+    text-decoration: none;
+    background-color: #e62429; /* Spider-Man red */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.contact-cta:hover {
+    background-color: #ff4d4d;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px;
+    background-color: #121212;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+.footer-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-nav ul li {
+    margin-left: 20px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #e62429; /* Spider-Man red */
+}
+
+.footer-social a {
+    margin-left: 10px;
+}
+
+.footer-social a img {
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+}
 
 @media (max-width: 768px) {
 
@@ -349,7 +510,6 @@ header {
     }
 
     .hero-section {
-
         flex-direction: column;
         text-align: center;
     }
@@ -357,11 +517,11 @@ header {
     .hero-image img {
 
         height: 300px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
-
+   
     .hero-content h1 {
-        margin-top: 100px;
+        margin-top: 120px;
         font-size: 3em;
         color: #e62429;
     }
@@ -402,6 +562,40 @@ header {
 
     .testimonial-card {
         max-width: 80%;
+    }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        max-width: 80%;
+    }
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-card {
+        max-width: 80%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-social {
+        margin-top: 10px;
     }
 
 }
