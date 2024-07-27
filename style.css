@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 70px;
     background-color: #1e1e1e;
     border-bottom: 2px solid #e62429;
     position: fixed;
@@ -138,7 +138,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0 0 50px;
+    padding:  30px 150px 0px 170px;
     background-color: #1e1e1e;
 }
 
@@ -196,6 +196,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     flex: 1;
+    margin: 10px;
     min-width: 250px;
     max-width: 30%;
     text-align: center;
@@ -381,11 +382,17 @@ header {
     background-color: #ff4d4d;
 }
 .contact-section {
-    padding: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 0px 50px 50px;
     background-color: #1e1e1e;
     text-align: center;
 }
-
+.contact-section img{
+    height: 400px;
+    position: relative;
+    left: 0;
+}
 .contact-section h2 {
     font-size: 2.5em;
     color: #e62429; /* Spider-Man red */
@@ -395,6 +402,7 @@ header {
 .contact-container {
     max-width: 600px;
     margin: 0 auto;
+    width: 600px;
 }
 
 .form-group {
@@ -434,7 +442,7 @@ header {
 /* Footer */
 
 .footer {
-    padding: 20px;
+    padding: 10px 70px;
     background-color: #121212;
 }
 
@@ -515,7 +523,6 @@ header {
     }
 
     .hero-image img {
-
         height: 300px;
         margin-top: 0px;
     }
@@ -533,6 +540,8 @@ header {
     .about-us-section {
         flex-direction: column;
         text-align: center;
+        padding:  30px 50px 0px 50px;
+        padding: 10p;
         background: url('assets/WhatsApp_Image_2024-07-26_at_10.34.20_PM-removebg.png') no-repeat center center/cover;
     }
 
@@ -554,6 +563,7 @@ header {
 
     .service-card {
         max-width: 80%;
+        /* gap: 20px; */
     }
     .testimonials-container {
         flex-direction: column;
@@ -596,6 +606,16 @@ header {
 
     .footer-social {
         margin-top: 10px;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        max-width: 900px;
+        margin: 0 auto;
+        width: 400px;
     }
 
 }
