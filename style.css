@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-bottom: 2px solid #e62429;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #e62429;
+}
+
+.button a {
+    text-decoration: none;
+    background-color: #e62429;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button a:hover {
+    background-color: #ff4d4d;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+
+
+.nav-menu.active ul {
+    display: flex;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    background: url('assets/halloween-cobweb-background_23-2148620637.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #e62429;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero-button {
+    text-decoration: none;
+    background-color: #e62429;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #ff4d4d;
+}
+
+.hero-image img {
+    height: 600px;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.about-us-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 0 50px;
+    background-color: #1e1e1e;
+}
+
+.about-us-content {
+    max-width: 600px;
+}
+
+.about-us-content h2 {
+    font-size: 2.5em;
+    color: #e62429;
+    margin-bottom: 20px;
+}
+
+.about-us-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-cta {
+    text-decoration: none;
+    background-color: #e62429;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.about-cta:hover {
+    background-color: #ff4d4d;
+}
+
+.about-us-image img {
+    height: 600px;
+}
+.services-section {
+    padding: 50px;
+    background-color: #121212;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 50px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #ccc;
+}
+.projects-section {
+    padding: 50px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        max-width: 80%;
+    }
+}
+
+.testimonials-section {
+    padding: 50px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5em;
+    color: #e62429; /* Spider-Man red */
+    margin-bottom: 40px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.2em;
+    color: #e62429; /* Spider-Man red */
+}
+
+@media (max-width: 768px) {
+
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #1e1e1e;
+    }
+
+    .nav-menu ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hero-section {
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .hero-content h1 {
+        margin-top: 100px;
+        font-size: 3em;
+        color: #e62429;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .about-us-section {
+        flex-direction: column;
+        text-align: center;
+        background: url('assets/WhatsApp_Image_2024-07-26_at_10.34.20_PM-removebg.png') no-repeat center center/cover;
+    }
+
+    .about-us-image img {
+        height: 400px;
+    }
+
+    .about-us-content h2 {
+        font-size: 2em;
+    }
+
+    .about-us-content p {
+        font-size: 1em;
+    }
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        max-width: 80%;
+    }
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        max-width: 80%;
+    }
+
+}
