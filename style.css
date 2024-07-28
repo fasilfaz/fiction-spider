@@ -258,6 +258,7 @@ header {
 
 .project-card img {
     height: 150px;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -481,12 +482,15 @@ header {
     margin-left: 10px;
 }
 
-.footer-social a img {
-    height: 30px;
+.footer-social a i {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: #e62429;
     transition: transform 0.3s;
 }
 
-.footer-social a:hover img {
+.footer-social a:hover i {
     transform: scale(1.2);
 }
 
